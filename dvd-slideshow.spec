@@ -1,4 +1,5 @@
 Summary:	dvd-slideshow makes a DVD slideshow video
+Summary(pl):	dvd-slideshow - tworzenie filmu DVD z pokazem slajdów
 Name:		dvd-slideshow
 Version:	0.6.0
 Release:	0.1
@@ -7,7 +8,7 @@ Group:		Applications/Multimedia
 Source0:	http://dl.sourceforge.net/dvd-slideshow/%{name}_%{version}.tar.gz
 # Source0-md5:	e06335611f3108a6caba807633696127
 URL:		http://dvd-slideshow.sourceforge.net/
-Requires:	ImageMagic >= 5.5.4
+Requires:	ImageMagick >= 5.5.4
 Requires:	dvdauthor >= 0.6.10
 Requires:	mjpegtools >= 1.6.2
 BuildArch:	noarch
@@ -19,12 +20,18 @@ file listing of pictures, effects, and audio tracks. You can add
 some nice effects like fades, crops, scrolls, or Ken Burns effects.
 It will hopefully become a command-line clone of imovie.
 
+%description -l pl
+dvd-slideshow tworzy film DVD z pokazem slajdów zawieraj±cy menu z
+tekstowej listy plików, efektów i ¶cie¿ek d¼wiêkowych. Mo¿na dodawaæ
+ró¿ne ³adne efekty, takie jak przej¶cia, obciêcia, przewijanie albo
+efekty Kena Burnsa. Projekt w zamierzeniu ma staæ siê dzia³aj±cym z
+linii poleceñ klonem imovie.
+
 %prep
 %setup -q -n %{name}_%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 install dir2slideshow $RPM_BUILD_ROOT%{_bindir}
