@@ -1,12 +1,12 @@
 Summary:	dvd-slideshow makes a DVD slideshow video
 Summary(pl):	dvd-slideshow - tworzenie filmu DVD z pokazem slajdów
 Name:		dvd-slideshow
-Version:	0.6.0
-Release:	0.1
+Version:	0.7.0
+Release:	1
 License:	GPL v2
 Group:		Applications/Multimedia
 Source0:	http://dl.sourceforge.net/dvd-slideshow/%{name}_%{version}.tar.gz
-# Source0-md5:	e06335611f3108a6caba807633696127
+# Source0-md5:	b88b1312095db508be5828b22140b44d
 URL:		http://dvd-slideshow.sourceforge.net/
 Requires:	ImageMagick >= 5.5.4
 Requires:	dvdauthor >= 0.6.10
