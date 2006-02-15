@@ -1,12 +1,12 @@
 Summary:	dvd-slideshow makes a DVD slideshow video
 Summary(pl):	dvd-slideshow - tworzenie filmu DVD z pokazem slajdów
 Name:		dvd-slideshow
-Version:	0.7.1
+Version:	0.7.4
 Release:	1
 License:	GPL v2
 Group:		Applications/Multimedia
-Source0:	http://dl.sourceforge.net/dvd-slideshow/%{name}_%{version}.tar.gz
-# Source0-md5:	34c3455cc8b75f5ea3c199d447a34a9b
+Source0:	http://dl.sourceforge.net/dvd-slideshow/%{name}-%{version}.tar.gz
+# Source0-md5:	03e06b00135c8113de7742fcd7a33632
 URL:		http://dvd-slideshow.sourceforge.net/
 Requires:	ImageMagick >= 5.5.4
 Requires:	dvdauthor >= 0.6.10
@@ -28,7 +28,7 @@ efekty Kena Burnsa. Projekt w zamierzeniu ma staæ siê dzia³aj±cym z
 linii poleceñ klonem imovie.
 
 %prep
-%setup -q -n %{name}_%{version}
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -37,8 +37,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install dir2slideshow $RPM_BUILD_ROOT%{_bindir}
 install dvd-menu $RPM_BUILD_ROOT%{_bindir}
 install dvd-slideshow $RPM_BUILD_ROOT%{_bindir}
-install dvd-menu $RPM_BUILD_ROOT%{_bindir}
-install gallery2slideshow $RPM_BUILD_ROOT%{_bindir}
+install gallery1-to-slideshow $RPM_BUILD_ROOT%{_bindir}
 install jigl2slideshow $RPM_BUILD_ROOT%{_bindir}
 install man/* $RPM_BUILD_ROOT%{_mandir}/man1
 
