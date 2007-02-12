@@ -1,5 +1,5 @@
 Summary:	dvd-slideshow makes a DVD slideshow video
-Summary(pl):	dvd-slideshow - tworzenie filmu DVD z pokazem slajdów
+Summary(pl.UTF-8):   dvd-slideshow - tworzenie filmu DVD z pokazem slajdÃ³w
 Name:		dvd-slideshow
 Version:	0.8.0
 %define		_rel	-1
@@ -21,12 +21,12 @@ file listing of pictures, effects, and audio tracks. You can add
 some nice effects like fades, crops, scrolls, or Ken Burns effects.
 It will hopefully become a command-line clone of imovie.
 
-%description -l pl
-dvd-slideshow tworzy film DVD z pokazem slajdów zawieraj±cy menu z
-tekstowej listy plików, efektów i ¶cie¿ek d¼wiêkowych. Mo¿na dodawaæ
-ró¿ne ³adne efekty, takie jak przej¶cia, obciêcia, przewijanie albo
-efekty Kena Burnsa. Projekt w zamierzeniu ma staæ siê dzia³aj±cym z
-linii poleceñ klonem imovie.
+%description -l pl.UTF-8
+dvd-slideshow tworzy film DVD z pokazem slajdÃ³w zawierajÄ…cy menu z
+tekstowej listy plikÃ³w, efektÃ³w i Å›cieÅ¼ek dÅºwiÄ™kowych. MoÅ¼na dodawaÄ‡
+rÃ³Å¼ne Å‚adne efekty, takie jak przejÅ›cia, obciÄ™cia, przewijanie albo
+efekty Kena Burnsa. Projekt w zamierzeniu ma staÄ‡ siÄ™ dziaÅ‚ajÄ…cym z
+linii poleceÅ„ klonem imovie.
 
 %prep
 %setup -q -n %{name}-%{version}%{_rel}
