@@ -1,13 +1,13 @@
+%define		_rel	-1
 Summary:	dvd-slideshow makes a DVD slideshow video
 Summary(pl.UTF-8):	dvd-slideshow - tworzenie filmu DVD z pokazem slajdów
 Name:		dvd-slideshow
-Version:	0.8.2
-%define		_rel	-2
+Version:	0.8.4
 Release:	1
 License:	GPL v2+
 Group:		Applications/Multimedia
-Source0:	http://dl.sourceforge.net/dvd-slideshow/%{name}-%{version}%{_rel}.tar.gz
-# Source0-md5:	f945f66f941e72485384067a52f5d46d
+Source0:	http://downloads.sourceforge.net/project/%{name}/%{name}/%{version}%{_rel}/%{name}-%{version}%{_rel}.tar.gz
+# Source0-md5:	ff0adf41553e78831e3217d7caca1ffe
 URL:		http://dvd-slideshow.sourceforge.net/
 Requires:	ImageMagick >= 5.5.4
 Requires:	dvdauthor >= 0.6.10
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-dvd-slideshow makes a DVD slideshow video with menus from a text
-file listing of pictures, effects, and audio tracks. You can add
-some nice effects like fades, crops, scrolls, or Ken Burns effects.
-It will hopefully become a command-line clone of imovie.
+dvd-slideshow makes a DVD slideshow video with menus from a text file
+listing of pictures, effects, and audio tracks. You can add some nice
+effects like fades, crops, scrolls, or Ken Burns effects. It will
+hopefully become a command-line clone of imovie.
 
 %description -l pl.UTF-8
 dvd-slideshow tworzy film DVD z pokazem slajdów zawierający menu z
