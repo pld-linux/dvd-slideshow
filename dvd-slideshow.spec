@@ -1,4 +1,4 @@
-%define		_rel	-1
+%define		_rel	0
 Summary:	dvd-slideshow makes a DVD slideshow video
 Summary(pl.UTF-8):	dvd-slideshow - tworzenie filmu DVD z pokazem slajdów
 Name:		dvd-slideshow
