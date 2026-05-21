@@ -1,13 +1,13 @@
-%define		_rel	0
+%define		subver	1
 Summary:	dvd-slideshow makes a DVD slideshow video
 Summary(pl.UTF-8):	dvd-slideshow - tworzenie filmu DVD z pokazem slajdów
 Name:		dvd-slideshow
-Version:	0.8.4
+Version:	0.8.6.%{subver}
 Release:	1
 License:	GPL v2+
 Group:		Applications/Multimedia
-Source0:	http://downloads.sourceforge.net/project/%{name}/%{name}/%{version}%{_rel}/%{name}-%{version}%{_rel}.tar.gz
-# Source0-md5:	ff0adf41553e78831e3217d7caca1ffe
+Source0:	http://downloads.sourceforge.net/project/%{name}/%{name}/0.8.6-%{subver}/%{name}-0.8.6-%{subver}.tar.gz
+# Source0-md5:	6fce4f2ae9dd30fb2b19c39336ea4046
 URL:		http://dvd-slideshow.sourceforge.net/
 Requires:	ImageMagick >= 5.5.4
 Requires:	dvdauthor >= 0.6.10
@@ -29,7 +29,8 @@ efekty Kena Burnsa. Projekt w zamierzeniu ma stać się działającym z
 linii poleceń klonem imovie.
 
 %prep
-%setup -q -n %{name}-%{version}%{_rel}
+%setup -q -n %{name}-0.8.6-%{subver}
+%{__sed} -i -e '1s,#!/usr/bin/env bash,#!/bin/bash,' dir2slideshow dvd-slideshow
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -47,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc TODO.txt
+%doc COPYING.txt INSTALL.txt TODO.txt dvd-slideshowrc
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
